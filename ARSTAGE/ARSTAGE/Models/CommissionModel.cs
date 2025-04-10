@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace IMG.Models
+namespace ARSTAGE.Models
 {
     public class CommissionModel
     {

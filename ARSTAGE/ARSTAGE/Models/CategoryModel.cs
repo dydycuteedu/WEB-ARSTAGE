@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace IMG.Models
+namespace ARSTAGE.Models
 {
     public class CategoryModel
     {

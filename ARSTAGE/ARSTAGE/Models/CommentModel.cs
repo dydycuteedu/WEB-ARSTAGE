@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace IMG.Models
+namespace ARSTAGE.Models
 {
     public class CommentModel
     {

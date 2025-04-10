@@ -290,7 +290,7 @@ figure {
   margin: 0 0 1rem;
 }
 
-img,
+ARSTAGE,
 svg {
   vertical-align: middle;
 }
@@ -586,12 +586,12 @@ progress {
   content: "— ";
 }
 
-.img-fluid {
+.ARSTAGE-fluid {
   max-width: 100%;
   height: auto;
 }
 
-.img-thumbnail {
+.ARSTAGE-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -604,7 +604,7 @@ progress {
   display: inline-block;
 }
 
-.figure-img {
+.figure-ARSTAGE {
   margin-bottom: 0.5rem;
   line-height: 1;
 }
@@ -4526,7 +4526,7 @@ textarea.form-control-lg {
   margin-right: -0.5rem;
 }
 
-.card-img-overlay {
+.card-ARSTAGE-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -4536,20 +4536,20 @@ textarea.form-control-lg {
   border-radius: calc(0.25rem - 1px);
 }
 
-.card-img,
-.card-img-top,
-.card-img-bottom {
+.card-ARSTAGE,
+.card-ARSTAGE-top,
+.card-ARSTAGE-bottom {
   width: 100%;
 }
 
-.card-img,
-.card-img-top {
+.card-ARSTAGE,
+.card-ARSTAGE-top {
   border-top-right-radius: calc(0.25rem - 1px);
   border-top-left-radius: calc(0.25rem - 1px);
 }
 
-.card-img,
-.card-img-bottom {
+.card-ARSTAGE,
+.card-ARSTAGE-bottom {
   border-bottom-left-radius: calc(0.25rem - 1px);
   border-bottom-right-radius: calc(0.25rem - 1px);
 }
@@ -4574,11 +4574,11 @@ textarea.form-control-lg {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top,
+  .card-group > .card:not(:last-child) .card-ARSTAGE-top,
 .card-group > .card:not(:last-child) .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom,
+  .card-group > .card:not(:last-child) .card-ARSTAGE-bottom,
 .card-group > .card:not(:last-child) .card-footer {
     border-bottom-left-radius: 0;
   }
@@ -4586,11 +4586,11 @@ textarea.form-control-lg {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top,
+  .card-group > .card:not(:first-child) .card-ARSTAGE-top,
 .card-group > .card:not(:first-child) .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom,
+  .card-group > .card:not(:first-child) .card-ARSTAGE-bottom,
 .card-group > .card:not(:first-child) .card-footer {
     border-bottom-right-radius: 0;
   }

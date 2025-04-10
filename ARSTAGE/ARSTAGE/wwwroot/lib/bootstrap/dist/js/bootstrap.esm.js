@@ -1124,7 +1124,7 @@ const CLASS_NAME_POINTER_EVENT = 'pointer-event';
 const SELECTOR_ACTIVE$1 = '.active';
 const SELECTOR_ACTIVE_ITEM = '.active.carousel-item';
 const SELECTOR_ITEM = '.carousel-item';
-const SELECTOR_ITEM_IMG = '.carousel-item img';
+const SELECTOR_ITEM_ARSTAGE = '.carousel-item ARSTAGE';
 const SELECTOR_NEXT_PREV = '.carousel-item-next, .carousel-item-prev';
 const SELECTOR_INDICATORS = '.carousel-indicators';
 const SELECTOR_INDICATOR = '[data-bs-target]';
@@ -1320,8 +1320,8 @@ class Carousel extends BaseComponent {
       }
     };
 
-    SelectorEngine.find(SELECTOR_ITEM_IMG, this._element).forEach(itemImg => {
-      EventHandler.on(itemImg, EVENT_DRAG_START, e => e.preventDefault());
+    SelectorEngine.find(SELECTOR_ITEM_ARSTAGE, this._element).forEach(itemARSTAGE => {
+      EventHandler.on(itemARSTAGE, EVENT_DRAG_START, e => e.preventDefault());
     });
 
     if (this._pointerEvent) {
@@ -3452,7 +3452,7 @@ const DefaultAllowlist = {
   h5: [],
   h6: [],
   i: [],
-  img: ['src', 'srcset', 'alt', 'title', 'width', 'height'],
+  ARSTAGE: ['src', 'srcset', 'alt', 'title', 'width', 'height'],
   li: [],
   ol: [],
   p: [],
