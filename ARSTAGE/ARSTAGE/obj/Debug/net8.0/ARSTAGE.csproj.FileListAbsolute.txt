@@ -266,3 +266,7 @@ C:\Users\CHUC DY\Downloads\EFC FPT\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\
 C:\Users\CHUC DY\Downloads\EFC FPT\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.pdb
 C:\Users\CHUC DY\Downloads\EFC FPT\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.genruntimeconfig.cache
 C:\Users\CHUC DY\Downloads\EFC FPT\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ref\ARSTAGE.dll
+C:\Users\winhtuan\Documents\GitHub\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.csproj.AssemblyReference.cache
+C:\Users\winhtuan\Documents\GitHub\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.dll
+C:\Users\winhtuan\Documents\GitHub\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\refint\ARSTAGE.dll
+C:\Users\winhtuan\Documents\GitHub\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.pdb
