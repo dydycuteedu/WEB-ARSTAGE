@@ -270,3 +270,12 @@ C:\Users\winhtuan\Documents\GitHub\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\
 C:\Users\winhtuan\Documents\GitHub\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.dll
 C:\Users\winhtuan\Documents\GitHub\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\refint\ARSTAGE.dll
 C:\Users\winhtuan\Documents\GitHub\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.pdb
+C:\Users\Admin\source\repos\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\source\repos\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.RazorAssemblyInfo.cache
+C:\Users\Admin\source\repos\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.RazorAssemblyInfo.cs
+C:\Users\Admin\source\repos\WEB-ARSTAGE\ARSTAGE\ARSTAGE\obj\Debug\net8.0\ARSTAGE.sourcelink.json

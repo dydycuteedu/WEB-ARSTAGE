@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using ARSTAGE.Data;
 using ARSTAGE.Models;
 using ARSTAGE.Models;
 using Microsoft.EntityFrameworkCore;
@@ -18,23 +17,23 @@ namespace ARSTAGE.Data
 
     public class UserRepository : IUserRepository
     {
-        private readonly AppDbContext _context;
+        private readonly DataContext _context;
 
-        public UserRepository(AppDbContext context)
+        public UserRepository(DataContext context)
         {
             _context = context;
         }
 
-        public async Task<User> GetUserByUsernameAsync(string username)
+        public async Task<AppUserModel> GetUserByUsernameAsync(string username)
         {
             return await _context.Users
-                .FirstOrDefaultAsync(u => u.Username.ToLower() == username.ToLower());
+                .FirstOrDefaultAsync(u => u.UserName.ToLower() == username.ToLower());
         }
 
         public async Task<User> GetUserByEmailAsync(string email)
         {
             return await _context.Users
-                .FirstOrDefaultAsync(u => u.Email.ToLower() == email.ToLower());
+                .FirstOrDefaultAsync(u => u.EmailConfirmed.ToLower() == email.ToLower());
         }
 
         public async Task<bool> CreateUserAsync(User user)

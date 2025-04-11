@@ -1,9 +1,8 @@
 ﻿using System.Threading.Tasks;
-using ARSTAGE.Models;
 using ARSTAGE.Services;
-using ARSTAGE.Models;
 using ARSTAGE.Services;
 using Microsoft.AspNetCore.Mvc;
+using ARSTAGE.Models.ViewModels;
 
 namespace ARSTAGE.Controllers.API
 {
@@ -19,7 +18,7 @@ namespace ARSTAGE.Controllers.API
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginModel model)
+        public async Task<IActionResult> Login([FromBody] LoginViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -37,7 +36,7 @@ namespace ARSTAGE.Controllers.API
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterModel model)
+        public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
         {
             if (!ModelState.IsValid)
             {
