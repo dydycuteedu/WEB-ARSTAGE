@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Login.Models
+namespace ARSTAGE.Models.ViewModels
 {
     public class ForgotPasswordViewModel
     {

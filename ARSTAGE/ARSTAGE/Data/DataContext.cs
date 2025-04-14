@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ARSTAGE.Data
 {
-    public class DataBaseContext : IdentityDbContext<AppUserModel>
+    public class DataContext : IdentityDbContext<AppUserModel>
     {
-        public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
         public DbSet<AppUserModel> Users { get; set; }

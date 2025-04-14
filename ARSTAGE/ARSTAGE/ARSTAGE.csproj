@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml.css" />
+    
   </ItemGroup>
 
   <ItemGroup>

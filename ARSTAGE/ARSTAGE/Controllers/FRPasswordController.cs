@@ -1,11 +1,11 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
-using Login.Data;
-using Login.Models;
-using Login.Services;
+using ARSTAGE.Data;
+using ARSTAGE.Models.ViewModels;
+using ARSTAGE.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Login.Controllers
+namespace ARSTAGE.Controllers
 {
     public class FRPasswordController : Controller
     {
