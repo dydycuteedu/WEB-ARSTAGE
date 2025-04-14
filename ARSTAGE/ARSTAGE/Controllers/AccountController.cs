@@ -1,14 +1,16 @@
 ﻿using System.Threading.Tasks;
-using ARSTAGE.Models;
-using ARSTAGE.Services;
+using Login.Models;
+using Login.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using System.Collections.Generic;
-using ARSTAGE.Models;
+using System.Security.Cryptography;
+using System.Text;
+using Login.Data;
 
-namespace ARSTAGE.Controllers
+namespace Login.Controllers
 {
     public class AccountController : Controller
     {

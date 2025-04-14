@@ -12,6 +12,12 @@ namespace ARSTAGE.Models
         public DateOnly Dob { get; set; }
         public bool Gender { get; set; }
         public bool IsBan { get; set; }
+        public string PasswordSalt { get; set; }
+        public bool IsActive { get; set; }  
+        public DateTime CreatedDate { get; set; }
+        public DateTime? LastLoginDate { get; set; }
+
+
 
 
         public List<FavouriteModel> Favorites { get; set; } = new List<FavouriteModel>();

@@ -2,20 +2,20 @@
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using ARSTAGE.Data;
-using ARSTAGE.Models;
+using Login.Data;
+using Login.Models;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.Extensions.Configuration;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 
-namespace ARSTAGE.Services
+namespace Login.Services
 {
     public interface IAuthService
     {
-        Task<(bool success, string message, string token)> LoginAsync(LoginViewModel model);
-        Task<(bool success, string message)> RegisterAsync(RegisterViewModel model);
+        Task<(bool success, string message, string token)> LoginAsync(LoginModel model);
+        Task<(bool success, string message)> RegisterAsync(RegisterModel model);
     }
 
     public class AuthService : IAuthService
@@ -32,7 +32,7 @@ namespace ARSTAGE.Services
             _configuration = configuration;
         }
 
-        public async Task<(bool success, string message, string token)> LoginAsync(LoginViewModel model)
+        public async Task<(bool success, string message, string token)> LoginAsync(LoginModel model)
         {
             // Cố gắng lấy người dùng bằng username trước
             var user = await _userRepository.GetUserByUsernameAsync(model.Username);
@@ -65,7 +65,7 @@ namespace ARSTAGE.Services
             return (true, "Đăng nhập thành công", token);
         }
 
-        public async Task<(bool success, string message)> RegisterAsync(RegisterViewModel model)
+        public async Task<(bool success, string message)> RegisterAsync(RegisterModel model)
         {
             if (await _userRepository.GetUserByUsernameAsync(model.Username) != null)
             {
