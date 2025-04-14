@@ -2,54 +2,55 @@
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
-using Login.Data;
-using Login.Models;
+using ARSTAGE.Models;
+
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using ARSTAGE.Data;
 
-namespace Login.Data
+namespace ARSTAGE.Data
 {
     public interface IUserRepository
     {
-        Task<User> GetUserByUsernameAsync(string username);
-        Task<User> GetUserByEmailAsync(string email);
-        Task<bool> CreateUserAsync(User user);
-        Task UpdateLastLoginDateAsync(int userId);
+        Task<AppUserModel> GetUserByUsernameAsync(string username);
+        Task<AppUserModel> GetUserByEmailAsync(string email);
+        Task<bool> CreateUserAsync(AppUserModel user);
+        Task UpdateLastLoginDateAsync(string id);
     }
 
     public class UserRepository : IUserRepository
     {
-        private readonly AppDbContext _context;
+        private readonly DataContext _context;
 
-        public UserRepository(AppDbContext context)
+        public UserRepository(DataContext context)
         {
             _context = context;
         }
 
-        public async Task<User> GetUserByUsernameAsync(string username)
+        public async Task<AppUserModel> GetUserByUsernameAsync(string username)
         {
             if (string.IsNullOrWhiteSpace(username)) return null;
 
             return await _context.Users
-                .FirstOrDefaultAsync(u => u.Username == username);
+                .FirstOrDefaultAsync(u => u.UserName == username);
         }
 
-        public async Task<User> GetUserByEmailAsync(string email)
+        public async Task<AppUserModel> GetUserByEmailAsync(string email)
         {
             return await _context.Users
                 .FirstOrDefaultAsync(u => u.Email.ToLower() == email.ToLower());
         }
 
 
-        public async Task<bool> CreateUserAsync(User user)
+        public async Task<bool> CreateUserAsync(AppUserModel user)
         {
             await _context.Users.AddAsync(user);
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task UpdateLastLoginDateAsync(int userId)
+        public async Task UpdateLastLoginDateAsync(string Id)
         {
-            var user = await _context.Users.FindAsync(userId);
+            var user = await _context.Users.FindAsync(Id);
             if (user != null)
             {
                 user.LastLoginDate = DateTime.Now;
@@ -60,7 +61,7 @@ namespace Login.Data
     }
     public interface IUserPasswordResetRepository
     {
-        Task<User> GetUserByEmailAsync(string email);
+        Task<AppUserModel> GetUserByEmailAsync(string email);
         Task UpdateResetPasswordTokenAsync(string email, string token, DateTime expiry);
         Task ResetPasswordAsync(string email, string token, string newPasswordHash);
 
@@ -76,7 +77,7 @@ namespace Login.Data
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        public async Task<User> GetUserByEmailAsync(string email)
+        public async Task<AppUserModel> GetUserByEmailAsync(string email)
         {
             using var connection = new SqlConnection(_connectionString);
             await connection.OpenAsync();
@@ -87,9 +88,9 @@ namespace Login.Data
             using var reader = await command.ExecuteReaderAsync();
             if (await reader.ReadAsync())
             {
-                return new User
+                return new AppUserModel
                 {
-                    UserId = reader.GetInt32(0),
+                    Id = reader.GetString(0),
                     Email = reader.GetString(1),
                     PasswordHash = reader.GetString(2),
                     ResetPasswordToken = reader.IsDBNull(3) ? null : reader.GetString(3),

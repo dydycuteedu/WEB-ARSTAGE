@@ -2,20 +2,21 @@
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using Login.Data;
-using Login.Models;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.Extensions.Configuration;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
+using ARSTAGE.Data;
+using ARSTAGE.Models.ViewModels;
+using ARSTAGE.Models;
 
-namespace Login.Services
+namespace ARSTAGE.Services
 {
     public interface IAuthService
     {
-        Task<(bool success, string message, string token)> LoginAsync(LoginModel model);
-        Task<(bool success, string message)> RegisterAsync(RegisterModel model);
+        Task<(bool success, string message, string token)> LoginAsync(LoginViewModel model);
+        Task<(bool success, string message)> RegisterAsync(RegisterViewModel model);
     }
 
     public class AuthService : IAuthService
@@ -32,7 +33,7 @@ namespace Login.Services
             _configuration = configuration;
         }
 
-        public async Task<(bool success, string message, string token)> LoginAsync(LoginModel model)
+        public async Task<(bool success, string message, string token)> LoginAsync(LoginViewModel model)
         {
             // Cố gắng lấy người dùng bằng username trước
             var user = await _userRepository.GetUserByUsernameAsync(model.Username);
@@ -58,14 +59,14 @@ namespace Login.Services
                 return (false, "Tên đăng nhập hoặc mật khẩu không đúng", null);
             }
 
-            await _userRepository.UpdateLastLoginDateAsync(user.UserId);
+            await _userRepository.UpdateLastLoginDateAsync(user.Id);
 
             var token = GenerateJwtToken(user);
 
             return (true, "Đăng nhập thành công", token);
         }
 
-        public async Task<(bool success, string message)> RegisterAsync(RegisterModel model)
+        public async Task<(bool success, string message)> RegisterAsync(RegisterViewModel model)
         {
             if (await _userRepository.GetUserByUsernameAsync(model.Username) != null)
             {
@@ -79,9 +80,9 @@ namespace Login.Services
 
             CreatePasswordHash(model.Password, out string passwordHash, out string passwordSalt);
 
-            var user = new User
+            var user = new AppUserModel
             {
-                Username = model.Username,
+                UserName = model.Username,
                 Email = model.Email,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
@@ -138,12 +139,12 @@ namespace Login.Services
             return hashOfInput == storedHash;
         }
 
-        private string GenerateJwtToken(User user)
+        private string GenerateJwtToken(AppUserModel user)
         {
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, user.UserId.ToString()),
-                new Claim(JwtRegisteredClaimNames.UniqueName, user.Username),
+                new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+                new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName),
                 new Claim(JwtRegisteredClaimNames.Email, user.Email),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };

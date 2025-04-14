@@ -1,11 +1,9 @@
 ﻿using System.Threading.Tasks;
-using Login.Models;
-using Login.Services;
-using Login.Models;
-using Login.Services;
+using ARSTAGE.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using ARSTAGE.Services;
 
-namespace Login.Controllers.API
+namespace ARSTAGE.Controllers.API
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -19,7 +17,7 @@ namespace Login.Controllers.API
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginModel model)
+        public async Task<IActionResult> Login([FromBody] LoginViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -30,14 +28,14 @@ namespace Login.Controllers.API
 
             if (result.success)
             {
-                return Ok(new { token = result.token, message = result.message });
+                return Ok(new { result.token, result.message });
             }
 
-            return Unauthorized(new { message = result.message });
+            return Unauthorized(new { result.message });
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterModel model)
+        public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -48,10 +46,10 @@ namespace Login.Controllers.API
 
             if (result.success)
             {
-                return Ok(new { message = result.message });
+                return Ok(new { result.message });
             }
 
-            return BadRequest(new { message = result.message });
+            return BadRequest(new { result.message });
         }
     }
 }

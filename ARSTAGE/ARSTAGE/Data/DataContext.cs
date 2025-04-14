@@ -1,4 +1,9 @@
-﻿using ARSTAGE.Models;
+
+using ARSTAGE.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace ARSTAGE.Data
 {
@@ -27,6 +32,13 @@ namespace ARSTAGE.Data
         {
             base.OnModelCreating(builder);
 
+
+            builder.Entity<AppUserModel>()
+                .HasIndex(f => f.UserName)
+                .IsUnique();
+            builder.Entity<AppUserModel>()
+                .HasIndex(f => f.Email)
+                .IsUnique();
             builder.Entity<FavouriteModel>()
                 .HasKey(f => new { f.UserID, f.PostID })
                 .IsClustered(false);

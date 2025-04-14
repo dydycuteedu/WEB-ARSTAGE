@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Login.Models;
-using Login.Services;
+
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -8,9 +7,12 @@ using System.Security.Claims;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-using Login.Data;
+using ARSTAGE.Models;
 
-namespace Login.Controllers
+using ARSTAGE.Services;
+using ARSTAGE.Models.ViewModels;
+
+namespace ARSTAGE.Controllers
 {
     public class AccountController : Controller
     {
@@ -30,7 +32,7 @@ namespace Login.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginModel model, string returnUrl = null)
+        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
 
@@ -82,7 +84,7 @@ namespace Login.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterModel model)
+        public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (!ModelState.IsValid)
             {
