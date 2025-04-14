@@ -15,7 +15,7 @@ namespace ARSTAGE.Data
         Task<AppUserModel> GetUserByUsernameAsync(string username);
         Task<AppUserModel> GetUserByEmailAsync(string email);
         Task<bool> CreateUserAsync(AppUserModel user);
-        Task UpdateLastLoginDateAsync(int userId);
+        Task UpdateLastLoginDateAsync(string id);
     }
 
     public class UserRepository : IUserRepository
@@ -48,9 +48,9 @@ namespace ARSTAGE.Data
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task UpdateLastLoginDateAsync(int userId)
+        public async Task UpdateLastLoginDateAsync(string Id)
         {
-            var user = await _context.Users.FindAsync(userId);
+            var user = await _context.Users.FindAsync(Id);
             if (user != null)
             {
                 user.LastLoginDate = DateTime.Now;
@@ -90,7 +90,7 @@ namespace ARSTAGE.Data
             {
                 return new AppUserModel
                 {
-                    Id = reader.GetInt32(0),
+                    Id = reader.GetString(0),
                     Email = reader.GetString(1),
                     PasswordHash = reader.GetString(2),
                     ResetPasswordToken = reader.IsDBNull(3) ? null : reader.GetString(3),

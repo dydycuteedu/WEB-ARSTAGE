@@ -59,7 +59,7 @@ namespace ARSTAGE.Services
                 return (false, "Tên đăng nhập hoặc mật khẩu không đúng", null);
             }
 
-            await _userRepository.UpdateLastLoginDateAsync(user.UserId);
+            await _userRepository.UpdateLastLoginDateAsync(user.Id);
 
             var token = GenerateJwtToken(user);
 
@@ -143,8 +143,8 @@ namespace ARSTAGE.Services
         {
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, user.UserId.ToString()),
-                new Claim(JwtRegisteredClaimNames.UniqueName, user.Username),
+                new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+                new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName),
                 new Claim(JwtRegisteredClaimNames.Email, user.Email),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
