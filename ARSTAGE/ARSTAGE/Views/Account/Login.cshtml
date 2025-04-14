@@ -1,0 +1,391 @@
+﻿@model Login.Models.LoginModel
+@{
+    ViewData["Title"] = "Đăng nhập";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <title>ARSTAGE - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url("~/Picture/BackgroundlLogin.jpg") center/cover no-repeat;
+            transform: rotate(90deg) scale(1.5);
+            transform-origin: center center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            color: white;
+            font-size: 40px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            z-index: 10;
+            font-family: 'Averia Sans Libre', cursive;
+        }
+
+        .login-container {
+            background-color: white;
+            width: 400px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 5;
+        }
+
+        .welcome-text {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="text"]:focus {
+            border-color: #999;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .remember input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            margin-right: 8px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .remember input[type="checkbox"]:checked::before {
+            content: "✓";
+            position: absolute;
+            font-size: 14px;
+            top: -1px;
+            left: 3px;
+            color: #666;
+        }
+
+        .remember:hover input ~ .checkmark {
+            background-color: #eee;
+        }
+
+        .remember input:checked ~ .checkmark {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+
+        .remember .checkmark:after {
+            left: 7px;
+            top: 3px;
+            width: 5px;
+            height: 10px;
+            border: solid #666;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+        .remember label {
+            margin-left: 8px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .forgot a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot a:hover {
+            text-decoration: underline;
+        }
+
+        .google-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background-color: white;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .google-btn img {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .google-btn span {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .continue-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #222;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .continue-btn:hover {
+            background-color: #000;
+        }
+
+        .signup-text {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .signup-text a {
+            color: #222;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .signup-text a:hover {
+            text-decoration: underline;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #999;
+            user-select: none;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .toggle-password svg {
+            width: 18px;
+            height: 18px;
+            fill: #999;
+        }
+
+        .toggle-password:hover svg {
+            fill: #666;
+        }
+
+        .attribution {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .attribution a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <div class="logo">ARSTAGE</div>
+
+    <div class="login-container">
+        <div class="welcome-text">WELCOME BACK</div>
+        <h1>Log In to your Account</h1>
+
+        <form asp-action="Login" asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="input-group">
+                <label asp-for="Username">Username/Email</label>
+                <input asp-for="Username" type="text" placeholder="Username or email">
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+
+            <div class="input-group">
+                <label asp-for="Password">Password</label>
+                <div class="password-container">
+                    <input asp-for="Password" type="password" placeholder="••••••••••••••">
+                    <span class="toggle-password" id="togglePassword">
+                        <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 4C4 4 1 12 1 12C1 12 4 20 12 20C20 20 23 12 23 12C23 12 20 4 12 4ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17ZM12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z" />
+                        </svg>
+
+                        <svg id="hidden-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+                            <path d="M12 7C14.76 7 17 9.24 17 12C17 12.65 16.87 13.26 16.64 13.83L19.56 16.75C21.07 15.49 22.26 13.86 22.99 12C21.26 7.61 16.99 4 11.99 4C10.59 4 9.25 4.3 8.01 4.72L10.17 6.88C10.74 6.66 11.35 6.42 12 7ZM2 3.27L4.28 5.55L4.74 6.01C3.08 7.3 1.78 9.02 1 11C2.73 15.39 7 19 12 19C13.55 19 15.03 18.63 16.38 18.04L16.8 18.46L19.73 21.39L21 20.11L3.27 2.39L2 3.27ZM7.53 8.8L9.08 10.35C9.03 10.56 9 10.78 9 11C9 12.66 10.34 14 12 14C12.22 14 12.44 13.97 12.65 13.92L14.2 15.47C13.53 15.8 12.79 16 12 16C9.24 16 7 13.76 7 11C7 10.21 7.2 9.47 7.53 8.8ZM11.84 8.02L14.99 11.17L15.01 11.01C15.01 9.35 13.67 8.01 12.01 8.01L11.84 8.02Z" />
+                        </svg>
+                    </span>
+                </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="remember-forgot">
+                <label class="remember">
+                    <input asp-for="RememberMe" type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Remember me
+                </label>
+                <div class="forgot">
+                    <a asp-controller="FRPassword" asp-action="ForgotPassword">Forgot Password?</a>
+                </div>
+            </div>
+
+            <button type="button" class="google-btn">
+                <img src="~/Picture/search.png" alt="Google Logo">
+                <span>Sign up with Gmail</span>
+            </button>
+
+            <button type="submit" class="continue-btn">Continue</button>
+        </form>
+
+        <div class="signup-text">
+            New User? <a asp-action="Register">SIGN UP HERE</a>
+        </div>
+    </div>
+
+    <div class="attribution">
+        <a href="https://www.flaticon.com/free-icons/password" title="password icons"></a> |
+        <a href="https://www.flaticon.com/free-icons/eye" title="eye icons"></a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const togglePassword = document.getElementById('togglePassword');
+            const passwordInput = document.getElementById('Password'); // Thay 'password' bằng 'Password'
+            const eyeIcon = document.getElementById('eye-icon');
+            const hiddenIcon = document.getElementById('hidden-icon');
+
+            togglePassword.addEventListener('click', function() {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+
+                if (type === 'password') {
+                    eyeIcon.style.display = 'block';
+                    hiddenIcon.style.display = 'none';
+                } else {
+                    eyeIcon.style.display = 'none';
+                    hiddenIcon.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>
