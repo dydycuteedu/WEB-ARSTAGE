@@ -1,14 +1,7 @@
-﻿using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text;
-using ARSTAGE.Models;
-
 using ARSTAGE.Services;
 using ARSTAGE.Models.ViewModels;
 
@@ -88,6 +81,13 @@ namespace ARSTAGE.Controllers
         {
             if (!ModelState.IsValid)
             {
+                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
+                foreach (var error in errors)
+                {
+                    Console.WriteLine(error);
+                    // hoặc
+                    // _logger.LogError(error);
+                }
                 return View(model);
             }
 

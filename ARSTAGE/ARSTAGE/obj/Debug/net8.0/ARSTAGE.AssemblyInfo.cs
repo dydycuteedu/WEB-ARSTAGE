@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ARSTAGE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e54448098dde0d47129e0f661f7652b75f22ca88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd6ba80e7331d66a323997c406c93ae865b4f16e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ARSTAGE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ARSTAGE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

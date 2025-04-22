@@ -137,7 +137,15 @@ namespace ARSTAGE.Data
                 .HasForeignKey(r => r.ArtistID)
                 .OnDelete(DeleteBehavior.NoAction);
             SeedRoles(builder);
+
+            builder.Entity<AppUserModel>().HasKey(u => u.Id);
+            builder.Entity<AppUserModel>().Property(u => u.Id).ValueGeneratedNever();
+
+            builder.Entity<AppUserModel>().HasIndex(u => u.UserName).IsUnique();
+            builder.Entity<AppUserModel>().HasIndex(u => u.Email).IsUnique();
         }
+
+        
         private void SeedRoles(ModelBuilder builder)
         {
             builder.Entity<IdentityRole>().HasData

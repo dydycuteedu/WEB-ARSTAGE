@@ -1,8 +1,5 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 using System.Net.Mail;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
 
 namespace ARSTAGE.Services
 {
@@ -30,7 +27,7 @@ namespace ARSTAGE.Services
             var senderName = _configuration["EmailSettings:SenderName"];
             var baseUrl = _configuration["AppSettings:BaseUrl"];
 
-            var resetUrl = $"{baseUrl}/Account/ResetPassword?token={WebUtility.UrlEncode(resetToken)}&email={WebUtility.UrlEncode(email)}";
+            var resetUrl = $"{baseUrl}FRPassword/ResetPassword?token={WebUtility.UrlEncode(resetToken)}&email={WebUtility.UrlEncode(email)}";
 
             var client = new SmtpClient(smtpServer, smtpPort)
             {

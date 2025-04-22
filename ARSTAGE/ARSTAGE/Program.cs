@@ -1,10 +1,10 @@
 ﻿using System.Text;
-using ARSTAGE.Data;
-using ARSTAGE.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using ARSTAGE.Data;
+using ARSTAGE.Services;
+using Microsoft.AspNetCore.Authentication.Google;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +17,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IUserPasswordResetRepository, UserPasswordResetRepository>();
+builder.Services.AddScoped<IPasswordService, PasswordService>();
 
 // Cấu hình authentication
 builder.Services.AddAuthentication(options =>
@@ -30,6 +31,11 @@ builder.Services.AddAuthentication(options =>
     options.LoginPath = "/Account/Login";
     options.LogoutPath = "/Account/Logout";
     options.AccessDeniedPath = "/Account/AccessDenied";
+})
+.AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
+{
+    options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
+    options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
 })
 .AddJwtBearer(options =>
 {
@@ -45,6 +51,7 @@ builder.Services.AddAuthentication(options =>
             Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
 });
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -70,5 +77,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Transaction}/{action=Index}/{id?}");
 
 app.Run();
