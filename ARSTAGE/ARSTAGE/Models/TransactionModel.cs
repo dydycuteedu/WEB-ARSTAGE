@@ -6,7 +6,7 @@ namespace ARSTAGE.Models
     public class TransactionModel
     {
         [Key]
-        public int TransactionID { get; set; } // ID giao dịch
+        public string TransactionID { get; set; } // ID giao dịch
 
         [Required]
         [ForeignKey("User")]
