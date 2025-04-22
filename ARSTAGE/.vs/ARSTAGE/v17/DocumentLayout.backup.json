@@ -1,0 +1,334 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\controllers\\loginwithgooglecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\controllers\\loginwithgooglecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\controllers\\api\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\controllers\\api\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\models\\artistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\models\\artistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\controllers\\frpasswordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\controllers\\frpasswordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\models\\postcategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\models\\postcategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|c:\\users\\winhtuan\\documents\\github\\web-arstage\\arstage\\arstage\\models\\appusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D0862F-3528-4979-ACC4-297B34836E7B}|ARSTAGE\\ARSTAGE.csproj|solutionrelative:arstage\\models\\appusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\appsettings.json",
+              "RelativeDocumentMoniker": "ARSTAGE\\appsettings.json",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\appsettings.json",
+              "RelativeToolTip": "ARSTAGE\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-22T07:59:16.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\API\\AccountController.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Controllers\\API\\AccountController.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\API\\AccountController.cs",
+              "RelativeToolTip": "ARSTAGE\\Controllers\\API\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:53:12.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Program.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Program.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Program.cs",
+              "RelativeToolTip": "ARSTAGE\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:52:02.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginWithGoogleController.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\LoginWithGoogleController.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Controllers\\LoginWithGoogleController.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\LoginWithGoogleController.cs",
+              "RelativeToolTip": "ARSTAGE\\Controllers\\LoginWithGoogleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:50:14.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthServices.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Services\\AuthServices.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Services\\AuthServices.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Services\\AuthServices.cs",
+              "RelativeToolTip": "ARSTAGE\\Services\\AuthServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:47:47.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Data\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Data\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Data\\UserRepository.cs",
+              "RelativeToolTip": "ARSTAGE\\Data\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:51:55.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Data\\DataContext.cs",
+              "RelativeToolTip": "ARSTAGE\\Data\\DataContext.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAwLEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:50:16.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ARSTAGE\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:43:32.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ArtistModel.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Models\\ArtistModel.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Models\\ArtistModel.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Models\\ArtistModel.cs",
+              "RelativeToolTip": "ARSTAGE\\Models\\ArtistModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:51:49.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Services\\EmailService.cs",
+              "RelativeToolTip": "ARSTAGE\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:47:34.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Services\\PasswordService.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Services\\PasswordService.cs",
+              "RelativeToolTip": "ARSTAGE\\Services\\PasswordService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:48:33.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryModel.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Models\\CategoryModel.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Models\\CategoryModel.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Models\\CategoryModel.cs",
+              "RelativeToolTip": "ARSTAGE\\Models\\CategoryModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:51:48.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ARSTAGE\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:50:12.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FRPasswordController.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\FRPasswordController.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Controllers\\FRPasswordController.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Controllers\\FRPasswordController.cs",
+              "RelativeToolTip": "ARSTAGE\\Controllers\\FRPasswordController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:50:11.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PostCategoryModel.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Models\\PostCategoryModel.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Models\\PostCategoryModel.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Models\\PostCategoryModel.cs",
+              "RelativeToolTip": "ARSTAGE\\Models\\PostCategoryModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:49:20.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppUserModel.cs",
+              "DocumentMoniker": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Models\\AppUserModel.cs",
+              "RelativeDocumentMoniker": "ARSTAGE\\Models\\AppUserModel.cs",
+              "ToolTip": "C:\\Users\\winhtuan\\Documents\\GitHub\\WEB-ARSTAGE\\ARSTAGE\\ARSTAGE\\Models\\AppUserModel.cs",
+              "RelativeToolTip": "ARSTAGE\\Models\\AppUserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T07:47:15.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 76,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

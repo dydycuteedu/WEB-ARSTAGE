@@ -3,7 +3,7 @@ using System;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
-namespace Login.Services
+namespace ARSTAGE.Services
 {
     public interface IPasswordService
     {
